@@ -1,0 +1,203 @@
+body {
+    font-family: DM Sans;
+}
+
+.blocpage {
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*----------------HEADER-------------*/
+
+.logo {
+    width: 120px;
+    margin-top: 20px;
+}
+
+main h1 {
+    color: #901C1C;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    position: absolute;
+    top: 33px;
+    right: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #901C1C;
+}
+
+.filtreTag {
+    border: 0.5px solid #C4C4C4;
+    border-radius: 11px;
+    padding-right:8px;
+    padding-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"][id="portraitTag"]:checked + label { background: #6666ff; }
+
+input[type="checkbox"][id="portraitTag"]:checked ~ .fashionTag,
+input[type="checkbox"][id="portraitTag"]:checked ~ .travelTag {
+display: none;
+}
+
+
+/*----------MAIN-----------*/
+
+.photographerId {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.casePhotographe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #D3573C;
+    margin-bottom: 0;
+}
+
+.place {
+    color: #901C1C;
+    font-weight: normal;
+    margin: 0;
+}
+
+.phrase {
+    font-size: 11px;
+}
+
+.price {
+    color: #757575;
+    font-size: 10px;
+}
+
+.casePhotographe ul {
+    list-style: none;
+    display: flex;
+    color: #901C1C;
+    margin-top: 7px;
+}
+
+
+
+/*----------------------PHOTOGRAPHE PAGE-----------------------------*/
+main ul 
+{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	color: #901C1C;
+}
+
+.descriptionPic
+{
+	display: flex;
+}
+
+.description
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.phrase2
+{
+	color: #757575;
+}
+
+.photographerId2
+{
+	width: 120px;
+	height: 100px;
+	border-radius:50px;
+}
+
+.galeriePhoto
+{
+    width: 290px;
+    height: 150px;
+}
+
+
+
+/*--------------------------------RESPONSIVE------------------------*/
+
+@media screen and (min-width:1000px) {
+    .blocpage {
+        max-width: 1270px;
+        margin: 0 auto;
+    }
+
+    /*----------HEADER-----------*/
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width:auto;
+    }
+
+    header nav ul {
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+
+    .filtreTag {
+        font-size: 10px;
+        margin-right: 7px;
+    }
+
+    /*----------MAIN----------*/
+    main h1 {
+        font-size: 30px;
+        font-weight: bold;
+        right: 25px;
+        top: 38px;
+    }
+
+    .allPhotographers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .casePhotographe {
+        width: 363px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header nav ul {
+        padding-left: 120px;
+    }
+
+    .filtreTag {
+        font-size: 14px;
+    }
+}
