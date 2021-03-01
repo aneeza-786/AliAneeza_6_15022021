@@ -2,6 +2,10 @@ body {
     font-family: DM Sans;
 }
 
+p{
+    margin: 0;
+}
+
 .blocpage {
     max-width: 290px;
     margin: 0 auto;
@@ -48,13 +52,6 @@ header nav ul {
     margin-bottom: 5px;
     font-size: 10px;
     font-weight: bold;
-}
-
-input[type="checkbox"][id="portraitTag"]:checked + label { background: #6666ff; }
-
-input[type="checkbox"][id="portraitTag"]:checked ~ .fashionTag,
-input[type="checkbox"][id="portraitTag"]:checked ~ .travelTag {
-display: none;
 }
 
 
