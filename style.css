@@ -1,14 +1,11 @@
 body {
     font-family: DM Sans;
+    max-width: 290px;
+    margin: 0 auto;
 }
 
 p{
     margin: 0;
-}
-
-.blocpage {
-    max-width: 290px;
-    margin: 0 auto;
 }
 
 a
@@ -24,7 +21,7 @@ a
     margin-top: 20px;
 }
 
-main h1 {
+header h1 {
     color: #901C1C;
     font-size: 15px;
     font-weight: normal;
@@ -34,7 +31,7 @@ main h1 {
     right: 15px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -144,13 +141,13 @@ main ul
 /*--------------------------------RESPONSIVE------------------------*/
 
 @media screen and (min-width:1000px) {
-    .blocpage {
+    body {
         max-width: 1270px;
         margin: 0 auto;
     }
 
     /*----------HEADER-----------*/
-    header {
+    nav {
         display: flex;
         flex-wrap: wrap;
     }
@@ -159,7 +156,7 @@ main ul
         width:auto;
     }
 
-    header nav ul {
+    nav ul {
         padding-top: 25px;
         padding-left: 20px;
     }
@@ -170,7 +167,7 @@ main ul
     }
 
     /*----------MAIN----------*/
-    main h1 {
+    header h1 {
         font-size: 30px;
         font-weight: bold;
         right: 25px;
@@ -190,7 +187,7 @@ main ul
 }
 
 @media screen and (min-width: 1200px) {
-    header nav ul {
+    nav ul {
         padding-left: 120px;
     }
 
