@@ -1,5 +1,3 @@
-
- console.log("coucou");
 fetch('photographersData.json')
   .then((response) => {
     return response.json()
@@ -12,3 +10,4 @@ fetch('photographersData.json')
      
     // Do something for an error here
   })
+  
