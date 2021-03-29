@@ -11,122 +11,16 @@
 </head>
 
 <body>
-    <nav aria-label="photographer categories">
-        <img class="logo" src="img/logo.svg" alt="logo">
-        <ul>
-            <li class="filtreTag">
-                <input class="inputTag" type="radio" id="portraitTag" name="portraitTag"/>
-                <label for="portraitTag">#Portrait</label>
-            </li>
-            <li class="filtreTag">
-                <input class="inputTag" type="radio" id="artTag" name="artTag"/>
-                <label for="artTag">#Art</label>
-            </li>
-            <li class="filtreTag">
-                <input class="inputTag" type="radio" id="fashionTag" name="fashionTag"/>
-                <label for="fashionTag">#Fashion</label>
-            </li>
-            <li class="filtreTag">
-                <input class="inputTag" type="radio" id="architectureTag" name="architectureTag"/>
-                <label for="architectureTag">#Architecture</label>
-            </li>
-            <li class="filtreTag">
-                <input class="inputTag" type="radio" id="travelTag" name="travelTag"/>
-                <label for="travelTag">#Travel</label>
-            </li>
-            <li class="filtreTag">#Sport</li>
-            <li class="filtreTag">#Animals</li>
-            <li class="filtreTag">#Events</li>
-        </ul>
-    </nav>
-    <header>
-        <h1>
-            Nos photographes
-        </h1>
-    </header>
-    <main class="allPhotographers">
+    <main id="allPhotographers">
         <section class="casePhotographe">
-            <img class="photographerId" src="img/Photographers-ID-Photos/MimiKeel.jpg" alt="photoMimiKeel">
-            <h2>Mimi Keel</h2>
-            <p class="place">London, UK</p>
-            <p class="phrase">Voir le beau dans le quotidien</p>
-            <p class=price>400€/jour</p>
-            <ul>
-                <li class="filtreTag">#portrait</li>
-                <li class="filtreTag">#events</li>
-                <li class="filtreTag">#travel</li>
-                <li class="filtreTag">#animals</li>
-            </ul>
-        </section>
-        <section class="casePhotographe">
-            <img class="photographerId" src="img/Photographers-ID-Photos/EllieRoseWilkens.jpg" alt="photoEllieRoseWilkens">
-            <h2>Ellie Rose Wilkens</h2>
-            <p class="place">Paris, France</p>
-            <p class="phrase">Travaille sur des compositions complexes</p>
-            <p class=price>250€/jour</p>
-            <ul>
-                <li class="filtreTag">#sports</li>
-                <li class="filtreTag">#architecture</li>
-            </ul>
-        </section>
-        <section class="casePhotographe fashionTag">
-            <img class="photographerId" src="img/Photographers-ID-Photos/TracyGalindo.jpg" alt="photoTracyGalindo">
-            <h2>Tracy Galindo</h2>
-            <p class="place">Montreal, Canada</p>
-            <p class="phrase">Photographe freelance</p>
-            <p class=price>500€/jour</p>
-            <ul>
-                <li class="filtreTag">#art</li>
-                <li class="filtreTag">#fashion</li>
-                <li class="filtreTag">#events</li>
-            </ul>
-        </section>
-        <section class="casePhotographe travelTag">
-            <img class="photographerId" src="img/Photographers-ID-Photos/NabeelBradford.jpg" alt="photoNabeelBradford">
-            <h2>Nabeel Bradford</h2>
-            <p class="place">Mexico City, Mexico</p>
-            <p class="phrase">Je vais toujours de l'avant</p>
-            <p class=price>350€/jour</p>
-            <ul>
-                <li class="filtreTag">#travel</li>
-                <li class="filtreTag">#portaits</li>
-            </ul>
-        </section>
-        <section class="casePhotographe fashionTag">
-            <img class="photographerId" src="img/Photographers-ID-Photos/RhodeDubois.jpg" alt="photoRhodeDubois">
-            <h2>Rhode Dubois</h2>
-            <p class="place">Barcelona, Spain</p>
-            <p class="phrase">Créatrice de souvenirs</p>
-            <p class=price>375€/jour</p>
-            <ul>
-                <li class="filtreTag">#sport</li>
-                <li class="filtreTag">#fashion</li>
-                <li class="filtreTag">#events</li>
-                <li class="filtreTag">#animals</li>
-            </ul>
-        </section>
-        <section class="casePhotographe travelTag">
-            <img class="photographerId" src="img/Photographers-ID-Photos/MarcelNikolic.jpg" alt="photoMarcelNikolic">
-            <h2>Marcel Nikolic</h2>
-            <p class="place">Berlin, Germany</p>
-            <p class="phrase">Toujours à la recherche de LA photo</p>
-            <p class=price>300€/jour</p>
-            <ul>
-                <li class="filtreTag">#travel</li>
-                <li class="filtreTag">#architecture</li>
-            </ul>
+            <div class="photographerId"></div>
+            <h2></h2>
+            <p class="place"></p>
+            <p class="phrase"></p>
+            <p class="price"></p>
+            <ul id="tagList"></ul>
         </section>
     </main>
     <script src="index.js"></script>
 </body>
-
 </html>
-
-
-<!--role="search"
-    nav role="navigation"
-    aria-label
-    aria-current=page
-    aria-haspopup et aria-expanded
-
--->
