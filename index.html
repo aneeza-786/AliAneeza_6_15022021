@@ -11,15 +11,41 @@
 </head>
 
 <body>
+    <nav aria-label="photographer categories">
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <ul>
+            <li class="filtreTag">
+                <input class="inputTag" type="radio" id="portraitTag" name="portraitTag"/>
+                <label for="portraitTag">#Portrait</label>
+            </li>
+            <li class="filtreTag">
+                <input class="inputTag" type="radio" id="artTag" name="artTag"/>
+                <label for="artTag">#Art</label>
+            </li>
+            <li class="filtreTag">
+                <input class="inputTag" type="radio" id="fashionTag" name="fashionTag"/>
+                <label for="fashionTag">#Fashion</label>
+            </li>
+            <li class="filtreTag">
+                <input class="inputTag" type="radio" id="architectureTag" name="architectureTag"/>
+                <label for="architectureTag">#Architecture</label>
+            </li>
+            <li class="filtreTag">
+                <input class="inputTag" type="radio" id="travelTag" name="travelTag"/>
+                <label for="travelTag">#Travel</label>
+            </li>
+            <li class="filtreTag">#Sport</li>
+            <li class="filtreTag">#Animals</li>
+            <li class="filtreTag">#Events</li>
+        </ul>
+    </nav>
+    <header>
+        <h1>
+            Nos photographes
+        </h1>
+    </header>
     <main id="allPhotographers">
-        <section class="casePhotographe">
-            <div class="photographerId"></div>
-            <h2></h2>
-            <p class="place"></p>
-            <p class="phrase"></p>
-            <p class="price"></p>
-            <ul id="tagList"></ul>
-        </section>
+        <section class="casePhotographe"></section>
     </main>
     <script src="index.js"></script>
 </body>
