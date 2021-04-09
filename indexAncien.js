@@ -33,7 +33,25 @@ fetch('photographersData.json')
     }
   })
 
-
+ /*data.photographers.forEach((photographer)=> {
+    let casePhotographe = document.querySelector('.casePhotographe');
+    casePhotographe.innerHTML += `
+    <div class="photographerId"><img src=img/Photographers-ID-Photos/${photographer.portrait}></div>
+    <h2>${photographer.name}</h2>
+    <p class="place">${photographer.city}, ${photographer.country}</p>
+    <p class="phrase">${photographer.tagline}</p>
+    <p class="price">${photographer.price}€/jour</p>
+    <ul id="tagList${photographer.id}"></ul>
+    `
+    
+    let photographerData = data.photographers[0];
+    console.log(data.photographers);
+    photographerData.tags.map((tags) => {
+      document.getElementById("tagList" + photographer.id).innerHTML +=
+      `<li class="filtreTag">${tags}</li>`
+    });
+    
+  })*/
 
 
 
