@@ -15,7 +15,19 @@
 		<img class="logo" src="img/logo.svg" alt="logo">
 	</header>
 	<main>
-		<div class="descriptionPic"></div>
+		<div class="descriptionAndPic"></div>
+        <div class="trierAndDropdown">
+            <p class="trier">Trier par</p>
+            <label for="dropdown"></label>
+            <select name="sortBy" id="dropdown">
+                <option value="popularité">Popularité</option>
+                <option value="date">Date</option>
+                <option value="titre">Titre</option>
+            </select>
+        </div>
+        <div class="photoGallery"></div>
+        <button type="button" class="contactBtn" title="Contact">Contactez-moi</button>
+        <div class="contactForm"></div>
 	</main>
 	<script src="photographer.js"></script>
 </body>

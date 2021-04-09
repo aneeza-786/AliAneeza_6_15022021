@@ -107,7 +107,7 @@ main ul
 	color: #901C1C;
 }
 
-.descriptionPic
+.descriptionAndPic
 {
 	display: flex;
 }
@@ -125,24 +125,128 @@ main ul
 
 .photographerId2 img
 {
-	width: 120px;
+	width: 100px;
 	height: 100px;
 	border-radius:50px;
+    object-fit: cover;
 }
 
-.galeriePhoto
+.photoGallery img
 {
     width: 290px;
-    height: 150px;
+    height: 160px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 2px;
+    margin-top: 5px;
 }
 
+.mediaTitle, .mediaPrice, .mediaLikes
+{
+    color: #911C1C;
+    font-size: 14px;
+}
+
+.mediaPrice
+{
+    margin-right: 10px;;
+}
+
+.mediaPriceAndLikes
+{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.mediaFooter
+{
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+}
+
+.contactBtn
+{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #911C1C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contactForm 
+{
+    background: #DB8876;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 30px 40px;
+    border-radius: 4px;
+    display: none;
+}
+
+.formData
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.formData input
+{
+    border: none;
+    padding: 10px;
+}
+
+#message
+{
+    padding: 40px;
+}
+
+.submitBtn
+{
+    width: 160px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    background: #901C1C;
+    font-size: 18px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.closeBtn
+{
+    color: white;
+    border: none;
+    font-size: 40px;
+    background-color: #DB8876;
+}
+
+.formHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trierAndDropdown 
+{
+    display: none;
+}
 
 
 /*--------------------------------RESPONSIVE------------------------*/
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:765px) {
     body {
-        max-width: 1270px;
+        max-width: 97%;
         margin: 0 auto;
     }
 
@@ -174,17 +278,105 @@ main ul
         top: 38px;
     }
 
-    .allPhotographers {
+    #allPhotographers {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 30px;
     }
 
     .casePhotographe {
         width: 363px;
     }
+
+    /*------PHOTOGRAPHER-PAGE----*/
+
+    .descriptionAndPic
+    {
+        background-color: #FAFAFA;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .description h2
+    {
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .photographerId2 img 
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+
+    .trierAndDropdown
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;;
+    }
+
+    .trier
+    {
+        font-weight: bold;
+        margin-right: 20px;;
+    }
+
+    #dropdown 
+    {
+        color: white;
+        background-color:#901C1C;
+        padding:13px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    option
+    {
+        text-align: center;
+    }
+
+    .photoGallery
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .descriptionAndPic
+    {
+        justify-content: space-between;
+    }
+
+    .photoGallery img 
+    {
+        width: 350px;
+        height: 230px;
+    }
+
+    .mediaBlock
+    {
+        margin-bottom: 20px;
+    }
+
+    .mediaFooter
+    {
+        width: 350px;
+    }
+
+    .contactBtn
+    {
+        position: absolute;
+        bottom: auto;
+        left: 25rem;
+        top: 14rem;
+    }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     nav ul {
